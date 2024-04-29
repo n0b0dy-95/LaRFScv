@@ -1,0 +1,40 @@
+"""
+LaRFScv UI v0.1.1 Shiny App
+
+This Shiny app is designed for Lasso Regression with Cross-validation (Lasso-CV). It allows users to perform Lasso regression on a dataset with cross-validation to identify the optimal regularization parameter (lambda) and select significant features. The app provides visualizations and a downloadable CSV file of selected features.
+
+Dependencies:
+- shiny: R package for web application development
+- glmnet: R package for Lasso and elastic-net regularized generalized linear models
+- ggplot2: R package for data visualization
+
+UI Components:
+- File Input: Allows users to upload a CSV file containing the dataset.
+- Select Input: Enables users to choose the dependent variable from the dataset.
+- Numeric Inputs:
+  - Number of folds for Cross-validation
+  - Coefficient Cut-off
+  - Seed value
+- Action Buttons:
+  - Analyze: Triggers the Lasso regression analysis.
+  - Download CSV: Allows users to download a CSV file containing selected features.
+- Tabs:
+  - MSE vs Log Lambda Plot: Displays the Mean Squared Error (MSE) against Log Lambda values.
+  - Selected Features vs Coefficient Plot: Presents the selected features and their coefficients.
+  - Selected Features Table: Shows the list of selected features and their corresponding coefficients.
+  - Error Message Box: Displays an error message if there is an issue with reading the CSV file.
+
+Server Functions:
+- Reading Data: Reads the uploaded CSV file and handles exceptions.
+- Updating Input Options: Updates the dependent variable options based on the uploaded dataset.
+- Lasso-CV Analysis: Performs Lasso regression with cross-validation and identifies the optimal lambda value.
+- Plotting: Renders plots for MSE vs Log Lambda and selected features vs coefficient.
+- Feature Selection: Selects significant features based on the provided coefficient cut-off.
+- Downloadable CSV: Allows users to download a CSV file containing the selected features.
+- Error Handling: Displays an error message if there is an issue with reading the CSV file.
+
+Note: This app is version 0.1 and is subject to further development and enhancements.
+
+Author: SUVANKAR BANERJEE
+Date: 15.12.2023
+"""
