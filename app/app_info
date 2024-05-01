@@ -1,5 +1,5 @@
 """
-LaRFScv UI v0.1.1 Shiny App
+LaRFScv UI v0.1.0 Shiny App
 
 This Shiny app is designed for Lasso Regression with Cross-validation (Lasso-CV). It allows users to perform Lasso regression on a dataset with cross-validation to identify the optimal regularization parameter (lambda) and select significant features. The app provides visualizations and a downloadable CSV file of selected features.
 
